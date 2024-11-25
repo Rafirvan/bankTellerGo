@@ -10,7 +10,7 @@ import (
 	"BankTellerAPI/models"
 )
 
-const PaymentDBPath = "payments.json"
+var PaymentDBPath = "payments.json"
 
 // WritePayments writes payments to the JSON file
 func WritePayments(payments []models.Payment) error {

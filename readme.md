@@ -36,6 +36,7 @@ To get started with this project, ensure the following tools are installed on yo
 ## Technologies Used
 - **Framework**: Go with Gorilla Mux
 - **Build Tool**: Go modules
+- **Testing**: Go Testing with Testify 
 
 
 
@@ -68,8 +69,12 @@ To handle the `SECRET_KEY` environment variable for your application, you can up
    ```bash
    go mod tidy
    ```
+4. Test the application(optional):
+   ```bash
+   go test ./tests -v
+   ```
 
-4. Run the application:
+5. Run the application:
    ```bash
    go run main.go
    ```

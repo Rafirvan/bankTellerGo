@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-const JWTDBPath = "jwt.json"
+var JWTDBPath = "jwt.json"
 
 // AddTokenToBlacklist prevents a JWT from being used after logout
 func AddTokenToBlacklist(token string) error {

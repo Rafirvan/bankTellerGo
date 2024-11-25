@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-const UserDBPath = "users.json"
+var UserDBPath = "users.json"
 
 // ReadUsers reads all users from the JSON file
 func ReadUsers() ([]models.User, error) {
